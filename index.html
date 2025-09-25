@@ -1,197 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Profile-picture</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #84a6e9;
-        }
-
-        header {
-            background-color: #941919;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: center; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Pavithra P | BCA Fresher Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f9fa; color: #222; }
+    .container { max-width: 800px; margin: 40px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+    h1, h2 { color: #2a4d69; }
+    h1 { margin-bottom: 0; }
+    .contact { float: right; text-align: right; }
+    .contact a { color: #2a4d69; text-decoration: none; margin-left: 10px; }
+    .section { margin-top: 32px; }
+    ul { padding-left: 20px; }
+    .skills-list, .cert-list { columns: 2; }
+    .project { background: #f1f6fa; border-radius: 6px; padding: 12px 18px; margin-bottom: 10px; }
+    .lang-list { display: flex; gap: 20px; }
+    @media (max-width: 600px) {
+      .container { padding: 12px; }
+      .contact { float: none; text-align: left; margin-top: 10px; }
+      .skills-list, .cert-list { columns: 1; }
+      .lang-list { flex-direction: column; gap: 5px; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            
-            <img src="preethi.JPG" alt="Profile Picture" class="Profile-picture">
-            <h1>PREETHI R</h1>
-            <p>BCA </p>
-        </div>
-    </header>
+  <div class="container">
+    <div>
+      <h1>Pavithra P</h1>
+      <div class="contact">
+        <div><a href="mailto:pavithra.p2303@gmail.com">pavithra.p2303@gmail.com</a></div>
+        <div><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
+      </div>
+      <div style="clear: both;"></div>
+      <h3>Aspiring Software Developer</h3>
+    </div>
 
-    <nav>
+    <div class="section">
+      <h2>Profile Summary</h2>
+      <p>
+        Motivated and detail-oriented BCA final year student with a strong foundation in computer applications, programming, and problem-solving. Skilled in Java, Python, C, SQL, and web technologies (HTML, CSS, JavaScript) with hands-on academic projects and coursework experience. Quick learner with the ability to adapt to new tools and technologies.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <b>Bachelor of Computer Application</b>, Dr. MGR Janaki College of Arts and Science for Women<br>
+          CGPA: 8.78 (2023 – Present)
+        </li>
+        <li>
+          <b>Class 12</b>, Our Lady’s Higher Secondary School<br>
+          Percentage: 93.11% (2022 – 2023)
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><b>Programming:</b> C, C++, Java, Python</li>
+        <li><b>Database:</b> SQL, MySQL</li>
+        <li><b>Web:</b> HTML, CSS, JavaScript</li>
+        <li><b>Tools:</b> Git/GitHub, VS Code</li>
+        <li><b>Soft Skills:</b> Communication, Teamwork, Adaptability, Time Management</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Python for Beginners: Mastering the Essentials - Scaler Academy</li>
+        <li>Foundation Course of Python – Infosys Springboard</li>
+        <li>Front End Web Development & Cloud – IBM Skills Build</li>
+        <li>Generative AI with IBM Cloud – IBM Skills Build</li>
+        <li>MongoDB Basics for Students – MongoDB University</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="project">
+        <b>EduTutor AI – AI-Powered Personalized Education Platform</b>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#internships">Internships</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
+          <li>Developed an AI-based learning platform with dynamic quiz generation, student evaluation, and real-time feedback.</li>
+          <li>Implemented using FastAPI (backend) and Streamlit (frontend) with IBM Watsonx & Granite models.</li>
+          <li>Integrated Google Classroom and built an analytics dashboard for educators to track student performance.</li>
         </ul>
-    </nav>
+      </div>
+    </div>
 
-    <section id="about">
-        <div class="section-content">
-            <h2>About</h2>
-            <p>A highly motivated BCA graduate with a strong foundation in computer applications, programming, and software development. Proficient in languages like Java, Python, C++, and web technologies such as HTML, CSS. Skilled in database management (SQL, MySQL)  Passionate about problem-solving, software development, and continuously learning emerging technologies. A team player with strong analytical skills, eager to contribute to innovative IT solutions.<a href="https://techtrainer20.github.io/git_con2/" traget="_target"></a></p>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>Dr MGR Janaki College of Arts and Science For Women - BCA</p>   
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>Html</li>
-                <li>Ms office</li>
-             </ul>
-        </div>
-    </section>
-
-    <section id="internships">
-        <div class="section-content">
-            <h2>Internship</h2>
-            <ul>
-                <li>Programming in C++ at Internpe</li>
-                 <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
-    <section id="Certifications">
-        <div class="section-content">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Foundation course of python at Infosys Springboard</li>
-                <li>Basics of Programming in Python at Scaler </li>
-                <li>Critical Soft Skills for Project Managers at IBM SkillsBuild</li>
-                 <!-- Add more project links here -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <a href="resumepreethi.pdf" target="_blank" class="download-button">Download Resume</a>
-        </center>
-        </div>
-        
-    </section>
-
-    <footer>
-        <p>&copy; PREETHI R</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <div class="section">
+      <h2>Languages</h2>
+      <div class="lang-list">
+        <span>Tamil</span>
+        <span>English</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
